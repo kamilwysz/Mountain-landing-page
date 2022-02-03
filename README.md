@@ -1,6 +1,6 @@
 # portfolio-react-bootstrap
 
-My portfolio site. I present here my skills and finished projects.
+Simple landing page about mountains.
 
 ## Built With
 
