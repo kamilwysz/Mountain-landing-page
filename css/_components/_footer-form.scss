@@ -1,0 +1,75 @@
+@import '../libary/include-media';
+form{
+    width: 45%;
+    padding:0 40px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;     
+    flex-direction: column;
+    align-items: center;
+    @include media('>=tablet', '<=desktop') {
+        margin: 0 auto;
+        padding: 0 20px; 
+    } 
+  
+    @include media('>=phone', '<=550px') {
+        padding: 0 20px; 
+        width: 100%;
+        margin: 0;
+    }
+    @include media('<=phone') {
+        padding: 20px;
+        width:auto ;
+        margin: 0;
+    }  
+        .contact{
+            padding: 10px;
+            @include media('>=phone', '<=desktop') {
+               display: grid;
+            }
+            
+            @include media('>=phone', '<=550px') {
+                width: auto;
+                margin: 0 auto;
+            }
+            
+            label{
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 2;
+            margin: 10px 0;
+            @include media('<=phone') {
+                font-size: 16px;
+            }      
+        }
+        input{
+            height: 50px;
+            background: rgba(212, 212, 255, 0.1);
+            font-size: 22px;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            display: flex;
+            &:focus{
+                background: rgba(212, 212, 255, 0.2);
+                    outline: 1px solid #c7d395;
+                }
+            @include media('>=tablet', '<=desktop'){
+                width: -webkit-fill-available;
+            }
+        }
+            #message{   
+                height: 250px;
+            }
+            }
+            .btn{
+                display: flex;
+                justify-self:center;
+                margin: 0 auto;
+                button{
+                    @include btn;
+                    @include btn-violet;
+                }
+            }
+        
+    }

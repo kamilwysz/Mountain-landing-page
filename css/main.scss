@@ -1,0 +1,22 @@
+@import '_components/mixin';
+@import '_components/footer-form';
+@import '_components/footer-social-contact';
+@import '_components/section-about';
+@import '_components/section-travel';
+@import '_components/header-hero';
+@import 'libary/navigation luxbar/luxbar.scss';
+@import 'libary/all.min.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  @include font-green;
+  scroll-behavior: smooth;
+}
+
+  
